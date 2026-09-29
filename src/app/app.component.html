@@ -1,0 +1,111 @@
+<div class="bar">Buy any 2 products and get a FREE video consultation with an Ayurvedic doctor</div>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><defs><radialGradient id="g" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#fff2b8"/><stop offset=".55" stop-color="#f4b02c"/><stop offset="1" stop-color="#c96a12"/></radialGradient></defs><circle cx="50" cy="50" r="48" fill="url(#g)"/><g stroke="#fff6d6" stroke-width="1.6" stroke-linecap="round" opacity=".75"><path d="M50 6v10M50 84v10M6 50h10M84 50h10M19 19l7 7M74 74l7 7M81 19l-7 7M26 74l-7 7"/></g><g fill="#7a3208"><circle cx="50" cy="30" r="8"/><path d="M36 62Q37 43 50 41Q63 43 64 62Z"/><ellipse cx="50" cy="66" rx="27" ry="8"/></g><path d="M20 84c8-12 18-10 24-4-10 0-16 2-24 4zM80 84c-8-12-18-10-24-4 10 0 16 2 24 4z" fill="#1f4a36"/></svg><span>Sanatan Ayurveda<small lang="hi">सनातन आयुर्वेद</small></span></a>
+  <nav class="nav" aria-label="Sections"><a href="#shop">Shop</a><a href="#doctor">Doctor</a><a href="#clinic">Clinic</a><a href="#hospital">Hospital</a><a href="#history">History</a><a href="#consult">Consult</a><a class="pill" href="#book">Book now</a></nav>
+  <button class="cartbtn" type="button" aria-label="Open cart" (click)="cart.open()">Cart <span>{{ cart.count() }}</span></button>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Ayurvedic remedies, made the <span>traditional</span> way.</h1>
+    <p>Trusted Ayurvedic products from well-known brands, with a free video consultation from an Ayurvedic doctor when you buy two.</p>
+    <a class="btn" href="#shop">Shop products</a> <a class="btn ghost2" href="#consult">Free doctor consult</a>
+  </div>
+  <div class="sage"><div class="ring"></div><img src="assets/img/sage.png" alt="Ayurvedic sage seated in meditation holding rudraksha beads"></div>
+</div>
+<div class="trust"><span><b>Genuine</b> brand products</span><span><b>Free</b> doctor video call with 2 products</span><span><b>Ask</b> a doctor before you buy</span></div>
+
+<app-shop></app-shop>
+
+<section id="consult">
+  <div class="offer">
+    <div><h2>Free video consultation with every 2 products</h2>
+    <p>Add any two products to your cart and speak to an Ayurvedic doctor on video at no cost. Without an order, a 20 minute consultation is ₹499.</p>
+    <a class="btn" href="#shop">Pick 2 products</a></div>
+    <div class="badge"><b>FREE</b><span>video call<br>worth ₹499</span></div>
+  </div>
+  <h3 class="sub">How it works</h3>
+  <ol class="steps"><li><b>Choose 2 products</b>Add any two items to your cart.</li><li><b>Pick a time slot</b>Select the day part and your health concern.</li><li><b>Order on WhatsApp</b>We confirm your order and send the video link.</li><li><b>Meet your doctor</b>Get a personal diet, routine and treatment plan.</li></ol>
+  <h3 class="sub">What our doctors treat</h3>
+  <div class="docs">
+    <div><i>🌿</i><h3>Digestion and gut</h3><p>Acidity, gas, constipation and low appetite.</p></div>
+    <div><i>✨</i><h3>Skin and hair</h3><p>Acne, dullness, dandruff and hair fall.</p></div>
+    <div><i>🌙</i><h3>Stress and sleep</h3><p>Anxiety, low energy and restless nights.</p></div>
+    <div><i>🦴</i><h3>Joints and pain</h3><p>Stiffness, back pain and arthritis care.</p></div>
+    <div><i>⚖️</i><h3>Weight and metabolism</h3><p>Diet plans matched to your dosha.</p></div>
+    <div><i>🌸</i><h3>Women's health</h3><p>Cycle, hormone and post-natal support.</p></div>
+  </div>
+  <p class="note" style="margin-top:20px">Consultations are held by registered Ayurvedic practitioners (BAMS). Add your doctors' names and qualifications here.</p>
+</section>
+
+<section id="doctor">
+  <h2>Meet your doctor</h2>
+  <p class="lead">Talk to a qualified Ayurvedic doctor face to face on video, from home.</p>
+  <div class="dr">
+    <figure class="drph"><img src="assets/img/dr-vishal-ugale.jpg" alt="Dr. Vishal Ugale, Ayurvedic doctor"><figcaption><b>Dr. Vishal Ugale</b>BAMS</figcaption></figure>
+    <div>
+      <div class="chips"><span>BAMS</span><span>R. A. Podar Ayurved Medical College</span><span>Video consultations</span></div>
+      <p class="about">Dr. Vishal Ugale is a graduate of R. A. Podar Ayurved Medical College. He looks at your digestion, sleep, routine and body type, then suggests food, lifestyle changes and herbal care that suit you.</p>
+      <app-booking></app-booking>
+    </div>
+  </div>
+</section>
+
+<section id="clinic">
+  <h2>Visit our clinic</h2>
+  <p class="lead">Prefer to meet in person? Come to the clinic for a consultation.</p>
+  <div class="clinic">
+    <div class="cinfo">
+      <h3>Sanatan Ayurveda Clinic</h3>
+      <dl>
+        <dt>Address</dt><dd>Ankush Nagar, near Chroma, Beed, Maharashtra</dd>
+                        <dt>Doctor</dt><dd>Dr. Vishal Ugale, BAMS</dd>
+      </dl>
+      <a class="btn" href="#book">Book a visit</a> <a class="btn ghost2" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ankush+Nagar+near+Chroma+Beed+Maharashtra">Get directions</a>
+    </div>
+  </div>
+</section>
+
+<section id="hospital">
+  <h2>Hospital gallery</h2>
+  <p class="lead">A place to show the hospital or partner facility behind your care.</p>
+  <div class="hosp">
+    <figure class="himg"><img src="assets/img/hospital-demo.jpg" alt="Sanjeevanam Ayurveda Hospital building at dusk"><figcaption><b>Sanjeevanam Ayurveda Hospital</b><span class="tag">Demo photo</span></figcaption></figure>
+    <div>
+      <h3>Demo section</h3>
+      <p class="about">This photo is a sample of Sanjeevanam Ayurveda Hospital, shown only to demonstrate how a hospital picture will look on the page. It is not Sanatan Ayurveda's clinic. Replace it with a photo of your own clinic or a partner hospital, with their permission, before you publish.</p>
+      <a class="btn" href="#book">Book a consultation</a>
+    </div>
+  </div>
+</section>
+
+<section id="history">
+  <h2>The history of Ayurveda</h2>
+  <p class="lead">Ayurveda, "the science of life", is one of the world's oldest medical traditions. Here is how it grew.</p>
+  <div class="hist">
+    <figure class="deity"><img src="assets/img/ashvini-kumaras.jpg" alt="Illustration of the Ashvini Kumaras, the twin horse-headed physicians of the gods"><figcaption><b>The Ashvini Kumaras</b>Twin physicians of the gods in the Vedas. Ayurvedic texts say they received the science of healing and passed it to Indra and the sages.</figcaption></figure>
+    <ol class="tl">
+      <li><time>Origins in tradition</time><h3>Divine knowledge</h3><p>Classical texts say healing knowledge passed from Brahma to Daksha Prajapati, then to the Ashvini Kumaras and Indra, and on to sages such as Bharadvaja and Atreya. Dhanvantari is honoured as the physician of the gods.</p></li>
+      <li><time>c. 1500 to 500 BCE</time><h3>The Vedic period</h3><p>The Rigveda and Atharvaveda hold hymns about healing plants, diet and the Ashvins' cures. These are the roots of Ayurveda.</p></li>
+      <li><time>c. 600 BCE to 500 CE</time><h3>The classical age</h3><p>The Charaka Samhita set out internal medicine, diagnosis and the doshas. The Sushruta Samhita described surgery, instruments and wound care. Scholars still debate exact dates, as both grew over centuries.</p></li>
+      <li><time>c. 600 CE</time><h3>Vagbhata's synthesis</h3><p>Vagbhata joined the earlier schools in the Ashtanga Hridayam, which is still studied in Ayurvedic colleges.</p></li>
+      <li><time>c. 700 to 1600 CE</time><h3>Medieval refinement</h3><p>Later authors added disease classification, mineral and metal preparations and pulse reading, in works such as the Madhava Nidana and Bhavaprakasha.</p></li>
+      <li><time>1800s to 1900s</time><h3>Decline and revival</h3><p>Colonial rule favoured Western medicine, but vaidyas and schools kept the tradition alive. In 1970 India passed the Indian Medicine Central Council Act to regulate Ayurvedic education.</p></li>
+      <li><time>Today</time><h3>Ayurveda worldwide</h3><p>India's Ministry of AYUSH was created in 2014, and the WHO set up its Global Centre for Traditional Medicine in Jamnagar, Gujarat. National Ayurveda Day is marked on Dhanvantari Jayanti.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wisdom"><span class="hi" lang="hi">सनातन आयुर्वेद</span><h2>Healing from the wisdom of the rishis</h2><p>For thousands of years, sages and vaidyas have treated the body, mind and season together. Sanatan Ayurveda brings those formulas to your home, made the same careful way.</p></div>
+<div class="why">
+  <div><h3>Trusted Ayurvedic brands</h3><p>Products from established makers, shown with their own packaging.</p></div>
+  <div><h3>Doctor-led advice</h3><p>Dr. Vishal Ugale can help you choose what suits your body type.</p></div>
+  <div><h3>Not sure what to pick?</h3><p>Book a consultation and get a plan made for you.</p></div>
+</div>
+</main>
+<footer>These products support general wellbeing and are not intended to diagnose, treat or cure any disease. Consult a doctor before use if you are pregnant or on medication.</footer>
+</div>
+<app-cart></app-cart>
+<a class="fab" href="#book">Book consult</a>
